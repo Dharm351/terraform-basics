@@ -25,8 +25,7 @@ output "number" {
 variable "list" {
     default = [
         "AWS", 
-        "GCP",
-        "Azure"
+        "GCP", "Azure",
         "DevOps",
         100,
         true,
