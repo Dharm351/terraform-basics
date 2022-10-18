@@ -21,3 +21,20 @@ variable "number" {
 output "number" {
   value = var.number
 }
+
+variable "list" {
+    default = [
+        "AWS", 
+        "GCP",
+        "Azure"
+        "DevOps",
+        100,
+        true,
+        "Dharm"
+    ]
+}
+# Above list can show us that we can put any type of data in one variable defination. 
+
+output "list-op" {
+  value = "Welcome to ${var.list[3]} learning and this contain ${var.list[0]} and the learner is ${var.list[6]}"
+}
