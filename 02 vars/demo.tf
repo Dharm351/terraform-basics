@@ -12,3 +12,12 @@ output "sample-op1" {
 
 # A variable can be accessed with or without ${} only if the variable is called.
 # But incase if it is needed to add with some other strings then we need to use double quotes.
+# There is no concept of single quotes. 
+
+variable "number" {
+    default =100
+}
+
+output "number" {
+  value = var.number
+}
