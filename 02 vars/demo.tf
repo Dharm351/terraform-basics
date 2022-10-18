@@ -30,3 +30,19 @@ variable "list" {
 output "list-op" {
   value = "Welcome to ${var.list[3]} learning and this contain ${var.list[0]} and the learner is ${var.list[6]} ${var.list[7]}"
 } 
+
+# Declaring a MAP/Dictionary variable
+
+variable "map" {
+    default = {
+        class = "devops",
+        duration = 85,
+        learner = "dharm",
+        time = "6AM",
+        over = "never"
+    }
+}
+
+output "map" {
+    value = "Welcome to ${var.map["class"]} and duration of the learning is ${var.map["over"]}. I'll learn it in the morning ${var.map["time"]}"
+}
