@@ -24,12 +24,7 @@ output "number" {
 
 variable "list" {
     default = [
-        "AWS", 
-        "GCP", "Azure",
-        "DevOps",
-        100,
-        true,
-        "Dharm"
+        "AWS", "GCP", "Azure", "DevOps", 100, true, "Dharm"
     ]
 }
 # Above list can show us that we can put any type of data in one variable defination. 
