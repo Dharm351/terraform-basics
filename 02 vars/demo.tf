@@ -53,3 +53,9 @@ variable "city" {}
     output "city" {
         value = "I am in ${var.city}"
     }
+
+variable "state" {}
+
+output "state" {
+  value = var.state
+}
