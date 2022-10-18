@@ -46,3 +46,10 @@ variable "map" {
 output "map" {
     value = "Welcome to ${var.map["class"]} and duration of the learning is ${var.map["over"]}. I'll learn it in the morning ${var.map["time"]}"
 }
+
+#declare a empty variable if you want to call a variable from another file
+
+variable "city" {}
+    output "city" {
+        value = "I am in ${var.city}"
+    }
