@@ -55,7 +55,6 @@ variable "city" {}
     }
 
 variable "state" {}
-
-output "state" {
-  value = var.state
+    output "state" {
+        value = var.state
 }
