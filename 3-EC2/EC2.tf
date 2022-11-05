@@ -10,3 +10,6 @@ resource "aws_instance" "demo_trafrm" {
   }
 }
 
+output "public_ip" {
+    value = aws_instance.demo_trafrm.public_ip 
+}
