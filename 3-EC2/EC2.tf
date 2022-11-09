@@ -5,6 +5,8 @@ provider "aws" {
 resource "aws_instance" "demo_trafrm" {
   ami           = "ami-06f7b3cf9a1bd9bd2"
   instance_type = "t2.micro"
+  security_groups = aws_security_group.allow_ssh.id
+
   tags   = {
     Name = "1st using trafrm"
   }
